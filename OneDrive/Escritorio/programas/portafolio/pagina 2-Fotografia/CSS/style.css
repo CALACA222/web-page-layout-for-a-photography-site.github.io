@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Doto:wght@100..900&family=Ga+Maamli&family=Honk&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+/*Main Styling*/
+html,
+body{
+    font-family: 'Roboto',sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1.25rem;
+}
+h6{
+    font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-bottom: 15px;
+    font-weight: 500px;
+}
+img{
+    max-width: 100%;
+}
+p{
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+/* Utility Class*/
+.continer{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.btn{
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: none;
+}
+.btn-dark{
+    background: #000;
+    color: #ffff;
+}
+.bk-light{
+    background: #ffffff;
+}
+.bk-dark{
+    background: #000;
+    color: #40E0D0;
+}
+.link-dark{
+    color: #40E0D0;
+}
+a{
+    color: #40E0D0;
+}
+.txt-small{
+    font-size: 12px;
+}
+.txt-white{
+    color: #40E0D0;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(400px, auto);
+}
+/*Navbar*/
+#navbar{
+    padding: 15px 0;
+}
+#navbar .logo img{
+    height: 30px;
+}
+#navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 20px 10px;
+}
+#navbar ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*Photography*/
+.grid-box-1{
+    grid-column: 1/3;
+    grid-row: 1/2 ;
+}
+.grid-box-2{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background: url('../imagenes/grid-box-2.jpeg');
+}
+.grid-box-3{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background: url('../imagenes/grid-box-3.jpeg');
+}
+.grid-box-4{
+    grid-column: 3/4;
+    grid-row:2/3 ;
+}
+.grid-box-5{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.grid-box-6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background: url('../imagenes/grid-box-6.jpeg');
+}
+.grid-box-2,
+.grid-box-3,
+.grid-box-6{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.grid-box-1,
+.grid-box-4,
+.grid-box-5{
+    padding: 80px 70px;
+}
+/*Stories*/
+#stories .stories-box{
+    flex: 1;
+    height: 450px;
+    padding: 300px 30px 30px 30px;
+}
+.stories-box-1{
+    background: url('../imagenes/story-box-1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.stories-box-2{
+    background: url('../imagenes/story-box-2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+.stories-box-3{
+    background: url('../imagenes/story-box-3.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+.stories-box-4{
+    background: url('../imagenes/story-box-4.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+#stories hr{
+    background: #40E0D0;
+    border:none;
+    height: 1px;
+    margin-bottom: 10px;
+}
+/*Features*/
+#features {
+    padding: 50px 0;
+    text-align: center;
+}
+#features img{
+    height: 120px;
+}
+#features h4{
+    padding: 30px 0 10px;
+}
+#features .flex-box {
+    margin: 20px;
+}
+/*Footer*/
+#mainfooter{
+    padding: 15px 0;
+}
+#mainfooter img{
+    height: 30px;
+}
+#mainfooter .flex{
+    justify-content: space-between;
+    padding: 30px 0;
+}
